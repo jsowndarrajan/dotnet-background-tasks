@@ -5,4 +5,8 @@
     <RootNamespace>_1HostedService</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

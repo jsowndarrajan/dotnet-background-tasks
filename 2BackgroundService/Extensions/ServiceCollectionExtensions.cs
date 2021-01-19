@@ -1,7 +1,7 @@
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace _1HostedService.Extensions
+namespace _2BackgroundService.Extensions
 {
     public static class ServiceCollectionExtensions
     {

@@ -14,23 +14,23 @@ namespace _1HostedService.Services
             _logger = logger;
         }
 
-        public Task StartAsync(CancellationToken cancellationToken)
+        public async Task StartAsync(CancellationToken cancellationToken)
         {
             _logger.LogInformation("Db migration service has started.");
-            return DoWork(cancellationToken);
+            await DoWork(cancellationToken);
+            //return Task.CompletedTask;
         }
 
-        public virtual Task DoWork(CancellationToken cancellationToken)
+        public virtual async Task DoWork(CancellationToken cancellationToken)
         {
-            Task.Delay(20000, cancellationToken)
-                    .ContinueWith(task =>
+            await Task.Delay(20000, cancellationToken)
+                .ContinueWith(task =>
+                {
+                    if (task.IsCompletedSuccessfully)
                     {
-                        if (task.IsCompletedSuccessfully)
-                        {
-                            _logger.LogInformation("Db migration has completed successfully");
-                        }
-                    }, cancellationToken);
-            return Task.CompletedTask;
+                        _logger.LogInformation("Db migration has completed successfully");
+                    }
+                }, cancellationToken);
         }
 
         public Task StopAsync(CancellationToken cancellationToken)
