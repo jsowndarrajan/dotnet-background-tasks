@@ -38,3 +38,4 @@ msbuild.wrn
 
 # Nuget
 packages
+4Hangfire/appsettings.Development.json
