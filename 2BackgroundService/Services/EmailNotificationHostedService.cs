@@ -21,7 +21,6 @@ namespace _2BackgroundService.Services
 
         protected override async Task ExecuteAsync(CancellationToken cancellationToken)
         {
-            //await Task.Delay(20000, cancellationToken);
             _logger.LogInformation("Email notification service is started");
             await BackgroundProcessing(cancellationToken);
         }

@@ -24,7 +24,7 @@ namespace _3WorkerService.Services
         private readonly ILogger<DailyReportService> _logger;
 
         public DailyReportService(ILogger<DailyReportService> logger)
-            : base(CronExpression.Parse("* * * * *"),
+            : base(CronExpression.Parse("42 18 * * *"),
                 TimeZoneInfo.Local)
         {
             _logger = logger;
@@ -34,7 +34,7 @@ namespace _3WorkerService.Services
         {
             await Task.Delay(5000, cancellationToken).ContinueWith(task =>
             {
-                _logger.LogInformation($"Daily report has sent to stack holders");
+                _logger.LogInformation("Daily report has sent to stack holders");
             }, cancellationToken);
         }
     }

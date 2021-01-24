@@ -16,9 +16,8 @@ namespace _1HostedService.Services
 
         public async Task StartAsync(CancellationToken cancellationToken)
         {
-            _logger.LogInformation("Db migration service has started.");
+            _logger.LogInformation("Db migration service has started."); 
             await DoWork(cancellationToken);
-            //return Task.CompletedTask;
         }
 
         public virtual async Task DoWork(CancellationToken cancellationToken)

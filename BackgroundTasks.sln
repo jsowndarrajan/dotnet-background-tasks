@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3WorkerService", "3WorkerSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4Hangfire", "4Hangfire\4Hangfire.csproj", "{92135B52-834B-4545-B5EB-44AA7C4DAAC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5Quartz", "5Quartz\5Quartz.csproj", "{53AF7131-A5D1-4BD2-9649-85B07A30F3BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{92135B52-834B-4545-B5EB-44AA7C4DAAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92135B52-834B-4545-B5EB-44AA7C4DAAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92135B52-834B-4545-B5EB-44AA7C4DAAC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53AF7131-A5D1-4BD2-9649-85B07A30F3BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53AF7131-A5D1-4BD2-9649-85B07A30F3BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53AF7131-A5D1-4BD2-9649-85B07A30F3BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53AF7131-A5D1-4BD2-9649-85B07A30F3BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
